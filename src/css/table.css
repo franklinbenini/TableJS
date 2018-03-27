@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+  }
+
+/**********************************************************************
+                               TABLES
+**********************************************************************/
+
+table {    
+    border: 1px solid #21b2d6;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;        
+  }
+
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+
+  table tr {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;    
+  }
+
+  table tr:nth-child(even) {
+    background-color: #eaf4f5
+  }
+
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  table th {
+    background-color: #21b2d6;
+    color: white;
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+/* Layout Responsivo - Quando a tela for menor que 600px de largura, o cabeçalho vai para o lado esquerdo e os dados para o direito */  
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f8f8f8
+      }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td:before {      
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+/**********************************************************************
+                               OUTROS
+**********************************************************************/
+
+.container {
+    border: 0px;            
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;    
+}
+
+.inputPesquisa {
+    background-image: url('/img/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+

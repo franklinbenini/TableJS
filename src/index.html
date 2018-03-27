@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste TableJS</title>
+  
+  <link rel="stylesheet" href="css/table.css">  
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <input type="text" class="inputPesquisa" id="txtPesquisa" onkeyup="pesquisaTable('txtPesquisa', 'tblTeste', 1)" 
+           placeholder="Pesquise pelo nome..." title="Digite um nome">
+    <table id="tblTeste">
+      <caption>Teste TableJS</caption>
+      <thead>
+        <tr>
+          <th onclick="ordenaTable(0, 'tblTeste')">Id</th>
+          <th onclick="ordenaTable(1, 'tblTeste')">Nome</th>
+          <th onclick="ordenaTable(2, 'tblTeste')">Endereço</th>        
+          <th onclick="ordenaTable(3, 'tblTeste')">Idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Franklin</td>
+          <td>Rua XXX</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Gabriel</td>
+          <td>Rua YYY</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Isabela</td>
+          <td>Rua WWW</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Cristiane</td>
+          <td>Rua ZZZ</td>
+          <td>35</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <script src="js/table.js"></script>  
+</body>
+</html>
