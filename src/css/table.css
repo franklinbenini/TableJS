@@ -33,8 +33,7 @@ table {
   table th,
   table td {
     padding: .625em;
-    text-align: center;
-    cursor: pointer;
+    text-align: center;    
   }
 
   table th {
@@ -43,6 +42,7 @@ table {
     font-size: .85em;
     letter-spacing: .1em;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
 /* Layout Responsivo - Quando a tela for menor que 600px de largura, o cabeçalho vai para o lado esquerdo e os dados para o direito */  
